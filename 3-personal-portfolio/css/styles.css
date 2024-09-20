@@ -2,12 +2,22 @@
     font-family: "Roboto", sans-serif;
 }
 
-@media (max-width: 430px) {
+@media (max-width: 768px) {
     body {
         text-align: center;
         display: flex;
         flex-direction: column;
         text-align: center;
-        
+    }
+    .nav {
+        display: flex;
+        flex-direction: column;
+    }
+    .pages {
+        display: flex;
+        flex-direction: column;
+    }
+    .barra {
+        display: none;
     }
 }
