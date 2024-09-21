@@ -1,0 +1,125 @@
+:root {
+    --background-color: #fff;
+    --text-color: #000;
+    --text-accent-color: #979797;
+    --accent-color: #007acc;
+    --accent-hover-color: #005bb5;
+    --accent-active-color: #003f87;
+    --border-color: #ecd7784f;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.changelog {
+    border: 2px solid var(--text-color);
+    border-radius: 25px;
+    box-shadow: 5px 5px 15px;
+    padding: 3rem;
+    text-align: center;
+    width: 100%;
+}
+
+.changelog h1 {
+    margin-bottom: 1rem;
+}
+
+.changelog p {
+    margin-bottom: 3rem;
+    color: var(--text-accent-color);
+}
+
+.timeline {
+    position: relative;
+    margin: 20px 0;
+    padding: 0;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: var(--text-color);
+    top: 0;
+    bottom: 0;
+    left: 33%;
+    margin-left: -1px;
+}
+
+.item {
+    display: flex;
+}
+
+.fecha {
+    margin-bottom: 1.5rem;
+    position: relative;
+    width: calc(33% - 1px);
+    padding-right: 1rem;
+    text-align: right;
+    color: var(--text-accent-color);
+}
+
+.evento {
+    padding-left: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.evento:hover {
+    transform: scale(1.1)
+}
+
+.item:before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: calc(33% - 5px);
+    background-color: var(--text-color);
+    border-radius: 50%;
+}
+
+button {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    padding: 0.7rem 2rem;
+    border-radius: 15px;
+}
+
+button:hover {
+    background-color: var(--accent-active-color);
+}
+
+@media (max-width: 600px) {
+    .item {
+        width: 100%;
+        text-align: left;
+        padding-left: 2rem;
+    }
+
+    .fecha {
+         text-align: left;
+    }
+
+    .timeline:before {
+        left: 3%;
+    }
+
+    .item:before {
+        left: calc(3% - 5px);
+    }
+    
+    .evento:hover {
+        transform: none
+    }
+}
