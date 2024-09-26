@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(218, 218, 218);
+}
+
+.all-testimonial {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 2rem;
+    padding: 1rem 10rem;
+}
+
+.testimonial-1,
+.testimonial-2 {
+    grid-column: span 1;
+}
+
+.testimonial-2 {
+    border: solid 2px;
+    border-radius: 20px;
+}
+
+.testimonial-3 {
+    grid-column: span 2;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.paragraph-1 {
+    background-color: #1e1e1e;
+    color: rgb(218, 218, 218);
+    padding: 1rem;
+    position: relative;
+    margin-bottom: 0.8rem;
+    font-size: 20px;
+}
+
+.paragraph-1:after {
+    content: "";
+    background-color: #1e1e1e;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 110px;
+    left: 33px;
+}
+
+.paragraph-2 {
+    padding: 1rem;
+    position: relative;
+    margin-bottom: 0.8rem;
+    font-size: 20px;
+}
+
+.profile-1 {
+    display: flex;
+    gap: 10px;
+    padding: 1rem;
+}
+
+.profile-2 {
+    display: flex;
+    gap: 10px;
+    padding: 1rem;
+}
+
+.profile-3 {
+    flex: 1 1 67%;
+    box-sizing: border-box;
+}
+
+.avatar-1 {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+.avatar-2 {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+.avatar-3 {
+    border-radius: 50%;
+    flex: 1 1 33%;
+    text-align: center;
+}
+
+img {
+    width: 60%;
+    height: auto;
+    object-fit: contain;
+}
