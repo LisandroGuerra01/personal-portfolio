@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    left: 25%;
+}
+
+.calendar {
+    position: relative;
+    display: inline-block;
+    padding: 0 20rem;
+    width: 100%;
+
+}
+
+input {
+    border: solid 2px;
+    width: 100%;
+    padding: 3px;
+}
+
+.date-picker {
+    border: solid 2px;
+    padding: 3px 10px;
+}
+
+.mounth {
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+}
+
+.dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+}
+
+.date {
+    border: solid 1px;
+}
