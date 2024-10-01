@@ -48,6 +48,10 @@ input {
     margin-bottom: 0.3rem;
 }
 
+.red::placeholder {
+    color: rgb(206, 0, 0);;
+}
+
 button {
     background-color: black;
     color: white;
